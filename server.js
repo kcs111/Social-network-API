@@ -10,8 +10,8 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
-  useFindAndModify: false,
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Loveless53:Loveless53@cluster0.id7xo.mongodb.net/', {
+  // useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
